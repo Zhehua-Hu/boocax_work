@@ -1,0 +1,41 @@
+%YAML:1.0
+# data
+step_num: 20
+sleeptime: 500
+#vehicle initial state
+posx_stddev: 0.1
+posy_stddev: 0.1
+yaw_stddev:  5
+yawspeed_stddev: 0.5
+speed_stddev: 0.05
+dt: 0.07
+#speed
+speed_forward: 1
+speed_rotation: 1
+
+#trace: 0---line; 1---circle; 2---sin; 3---rectangle
+trajectory: 0
+
+# vehicle camera intrinsics
+Camera.fx: 517.3
+Camera.fy: 516.5
+Camera.cx: 320.0
+Camera.cy: 240.0
+Camera.stddev: 2
+
+#observe camera(int w, int h, GLprecision fu, GLprecision fv, GLprecision u0, GLprecision v0, GLprecision zNear, GLprecision zFar)
+observe.w: 1024
+observe.h: 720
+observe.fu: 420
+observe.fv: 420
+observe.u0: 512
+observe.v0: 360
+observe.zNear: 0.1
+observe.zFar: 1000
+observe.posx: 0
+observe.posy: 10
+observe.posz: 20
+observe.target_posx: 0
+observe.target_posy: 10
+observe.target_posz: 0
+
