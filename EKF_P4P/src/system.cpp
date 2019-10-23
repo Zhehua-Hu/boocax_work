@@ -20,21 +20,14 @@ if(!fsSettings.isOpened())
 }
 sleeptime = fsSettings["sleeptime"];
 step_num  = fsSettings["step_num"];
-cout<<"1"<<endl;
 cam = new Camera(strSettingsFile,this);
-cout<<"3"<<endl;
 AGV = new Vehicle(strSettingsFile);
-cout<<"2"<<endl;
-
 AGV->cam = cam;
 cam->set_vehicle(AGV);
-
 view = new Viewer(strSettingsFile,this);
 view->setVehicle(AGV);
-cout<<"4"<<endl;
 view->pose    = AGV->pose;
 mptViewer = new thread(&Viewer::Run,view);
-cout<<"5"<<endl;
 sleep(2);
 }
 

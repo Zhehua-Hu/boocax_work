@@ -13,6 +13,14 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/media/oym/source/oym/SLE_monocularSLAM/3rd_party/sophus/sim3.cpp" "/media/oym/source/oym/SLE_monocularSLAM/build/CMakeFiles/Sle_monocularSLAM.dir/3rd_party/sophus/sim3.cpp.o"
   "/media/oym/source/oym/SLE_monocularSLAM/3rd_party/sophus/so2.cpp" "/media/oym/source/oym/SLE_monocularSLAM/build/CMakeFiles/Sle_monocularSLAM.dir/3rd_party/sophus/so2.cpp.o"
   "/media/oym/source/oym/SLE_monocularSLAM/3rd_party/sophus/so3.cpp" "/media/oym/source/oym/SLE_monocularSLAM/build/CMakeFiles/Sle_monocularSLAM.dir/3rd_party/sophus/so3.cpp.o"
+  "/media/oym/source/oym/SLE_monocularSLAM/src/camera.cpp" "/media/oym/source/oym/SLE_monocularSLAM/build/CMakeFiles/Sle_monocularSLAM.dir/src/camera.cpp.o"
+  "/media/oym/source/oym/SLE_monocularSLAM/src/config.cpp" "/media/oym/source/oym/SLE_monocularSLAM/build/CMakeFiles/Sle_monocularSLAM.dir/src/config.cpp.o"
+  "/media/oym/source/oym/SLE_monocularSLAM/src/frame.cpp" "/media/oym/source/oym/SLE_monocularSLAM/build/CMakeFiles/Sle_monocularSLAM.dir/src/frame.cpp.o"
+  "/media/oym/source/oym/SLE_monocularSLAM/src/initialize_mono.cpp" "/media/oym/source/oym/SLE_monocularSLAM/build/CMakeFiles/Sle_monocularSLAM.dir/src/initialize_mono.cpp.o"
+  "/media/oym/source/oym/SLE_monocularSLAM/src/map.cpp" "/media/oym/source/oym/SLE_monocularSLAM/build/CMakeFiles/Sle_monocularSLAM.dir/src/map.cpp.o"
+  "/media/oym/source/oym/SLE_monocularSLAM/src/mappoint.cpp" "/media/oym/source/oym/SLE_monocularSLAM/build/CMakeFiles/Sle_monocularSLAM.dir/src/mappoint.cpp.o"
+  "/media/oym/source/oym/SLE_monocularSLAM/src/sift_line_endpoint.cpp" "/media/oym/source/oym/SLE_monocularSLAM/build/CMakeFiles/Sle_monocularSLAM.dir/src/sift_line_endpoint.cpp.o"
+  "/media/oym/source/oym/SLE_monocularSLAM/src/visual_odometry.cpp" "/media/oym/source/oym/SLE_monocularSLAM/build/CMakeFiles/Sle_monocularSLAM.dir/src/visual_odometry.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -24,7 +32,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/eigen3"
-  "../3rd_party"
+  "../3rd_party/include"
   "../3rd_party/sophus"
   "../3rd_party/DBoW2/DUtils"
   "../include"

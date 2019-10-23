@@ -41,7 +41,7 @@
 
 #include "include/precomp_custom.hpp"
 #include <opencv2/core/hal/hal.hpp>
-
+#include "common.h"
 
 //using namespace cv;
 namespace cv
@@ -790,8 +790,8 @@ void LSDDetectorC::detectline( std::vector<Mat>& gpyr, std::vector<KeyLine>& key
 
     });
 
-#if 1//Debug
-    cv::imshow("线段图",temp_img);
+#if ShowMatch
+    cv::imshow("show_line",temp_img);
 #endif
 
 }

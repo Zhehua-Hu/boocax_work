@@ -16,11 +16,11 @@
 #include "se3.h"
 #include "so3.h"
 
-#include <3rd_party/sophus/se3.h>
+//#include <3rd_party/sophus/se3.h>
 //#include "3rd_party/sophus/se3.h"
-#include "3rd_party/sophus/so3.h"
-#include "3rd_party/include/descriptor_custom.hpp"
-#include <3rd_party/include/feature_detection.h>
+//#include "3rd_party/sophus/so3.h"
+#include "descriptor_custom.hpp"
+#include "feature_detection.h"
 
 #define RUN 1
 #define Debug 1

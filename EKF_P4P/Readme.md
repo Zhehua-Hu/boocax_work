@@ -76,3 +76,28 @@ x:-0.000968765y:-0.100072yaw2.65626e-06
 实际位置:
 x:-0.0163742y:-0.0388066yaw:3.42145
 可以看到yaw有一定的偏差,有可能是算法本身的系统误差问题;
+
+
+
+配置要求:
+Pangolin
+opencv3.2.0(必须该版本,其他版本不一定能行,比如opencv3.3.1计算PNP时会得出nan的结果,但使用opencv3.2.0时却能得出正确的结果)
+
+如何使用?
+# EKF_P4P
+
+第一步:将代码clone到本地
+git clone https://github.com/oym1994/boocax_work
+注意,无法单独克隆该项目,必须克隆整个工程项目
+
+第二步:进入克隆的工程项目目录下,并新建文件夹build
+cd boocax_work/EKF_P4P
+mkdir build
+第三步:进入build文件夹,并编译
+cd build
+cmake ..
+make
+
+第四步:运行
+./bin/main
+

@@ -51,13 +51,13 @@ endif()
 # Sources files
 set(SLEmonocular_SOURCE_FILES
   ${PROJECT_SOURCE_DIR}/src/map.cpp
-  ${PROJECT_SOURCE_DIR}/src/g2o_types.cpp 
   ${PROJECT_SOURCE_DIR}/src/frame.cpp
   ${PROJECT_SOURCE_DIR}/src/config.cpp 
   ${PROJECT_SOURCE_DIR}/src/visual_odometry.cpp
   ${PROJECT_SOURCE_DIR}/src/sift_line_endpoint.cpp
   ${PROJECT_SOURCE_DIR}/src/initialize_mono.cpp
   ${PROJECT_SOURCE_DIR}/src/mappoint.cpp
+  ${PROJECT_SOURCE_DIR}/src/camera.cpp
 )
 
 set(3rd_SOURCE_FILES
@@ -80,21 +80,20 @@ include_directories(
   ${PROJECT_SOURCE_DIR}/include
 ) 
 
-add_library(a ${SOPHUS_LIST_CPP} ${3rd_SOURCE_FILES})
+add_library(${PROJECT_NAME} ${SOPHUS_LIST_CPP} ${3rd_SOURCE_FILES} ${SLEmonocular_SOURCE_FILES})
 
-target_link_libraries(a
+target_link_libraries(${PROJECT_NAME}
 ${OpenCV_LIBS}
 ${EIGEN3_LIBS}
 )
 
-add_library(srclib ${SLEmonocular_SOURCE_FILES})
-target_link_libraries(srclib ${PROJECT_NAME})
 
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY bin)
+add_executable(test_vedio ${PROJECT_SOURCE_DIR}/test/test_vedio.cpp )
+target_link_libraries(test_vedio ${PROJECT_NAME})
 
-#set(CMAKE_RUNTIME_OUTPUT_DIRECTORY bin)
-#add_executable(test_vedio ${PROJECT_SOURCE_DIR}/test/test_vedio.cpp )
-#target_link_libraries(test_vedio ${PROJECT_NAME})
-
+#configure_file(${PROJECT_SOURCE_DIR}/config/default.yaml ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
+#configure_file(${PROJECT_SOURCE_DIR}/vedio/test_color.mp4 ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
 
 
 

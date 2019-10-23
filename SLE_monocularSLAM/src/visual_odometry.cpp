@@ -24,7 +24,6 @@
 #include <boost/timer.hpp>
 
 #include "../include/visual_odometry.h"
-#include "../include/g2o_types.h"
 
 
 
@@ -53,6 +52,10 @@ VisualOdometry::VisualOdometry() :
     key_frame_min_trans = Config::get<double> ( "keyframe_translation" );
     map_point_erase_ratio_ = Config::get<double> ( "map_point_erase_ratio" );
     orb_ = cv::ORB::create ( num_of_features_, scale_factor_, level_pyramid_ );
+//#if ShowMatch
+//    cv::namedWindow("前后两帧匹配图", WINDOW_NORMAL);
+//#endif
+
 }
 
 VisualOdometry::~VisualOdometry()
@@ -75,8 +78,6 @@ bool VisualOdometry::addFrame ( Frame::Ptr frame )
         cout<<"state: NOT_INITIALIZED "<<endl;
 
 #endif
-
-        cv::imshow("frame1", frame->gray_);
 
         frame->frame_pos_<<0,0,0;
 
@@ -121,8 +122,7 @@ bool VisualOdometry::addFrame ( Frame::Ptr frame )
 
     case INITIALIZING:
     {
-  //      cv::imshow("curr_image1", curr_->gray_);
-  //      cv::imshow("curr_ref1", ref_->gray_);
+
 #if Debug
 
         cout<<"+-+-+-+-+-+-+-+-+-+-+-+-+-+"<<endl;
@@ -427,13 +427,7 @@ void VisualOdometry::Monocular_featureMatching(){
 
     cv::putText(imageOutput,to_string(feature_matches_.size()),Point(640,50),FONT_HERSHEY_SIMPLEX,1,Scalar(255,23,0),4,8);
 
-    cv::imshow("前后两帧匹配图", imageOutput);
-
-//    cv::imshow("curr_image", curr_->gray_);
-
-//    cv::imshow("curr_ref", ref_->gray_);
-
-//    cv::imshow("temp:",temp);
+    cv::imshow("match_frame", imageOutput);
 
 #endif
 
@@ -462,13 +456,11 @@ void VisualOdometry:: Monocular_SLEMatching(){
 
     cv::putText(imageOutput,to_string(feature_matches_.size()),Point(640,50),FONT_HERSHEY_SIMPLEX,1,Scalar(255,23,0),4,8);
 
-    cv::namedWindow("前后两帧匹配图", WINDOW_NORMAL);
-
     Mat temp_img;
 
     resize(imageOutput,temp_img,Size(ref_->gray_.cols,ref_->gray_.rows),0, 0, INTER_LINEAR );
 
-    cv::imshow("前后两帧匹配图", temp_img);
+    cv::imshow("match_frame", temp_img);
 
 #endif
 
@@ -677,9 +669,7 @@ void VisualOdometry::UndistortKeyPoints(){
 
 bool VisualOdometry::addimage(const Mat& image){
 
-    cv::imshow("image1", image);
-
-    static long image_id = 0;
+   static long image_id = 0;
     image_id ++;
     switch ( state_ )
     {

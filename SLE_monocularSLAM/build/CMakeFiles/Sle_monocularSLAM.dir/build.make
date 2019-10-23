@@ -273,6 +273,198 @@ CMakeFiles/Sle_monocularSLAM.dir/3rd_party/DBoW2/DUtils/Timestamp.cpp.o.provides
 CMakeFiles/Sle_monocularSLAM.dir/3rd_party/DBoW2/DUtils/Timestamp.cpp.o.provides.build: CMakeFiles/Sle_monocularSLAM.dir/3rd_party/DBoW2/DUtils/Timestamp.cpp.o
 
 
+CMakeFiles/Sle_monocularSLAM.dir/src/map.cpp.o: CMakeFiles/Sle_monocularSLAM.dir/flags.make
+CMakeFiles/Sle_monocularSLAM.dir/src/map.cpp.o: ../src/map.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/oym/source/oym/SLE_monocularSLAM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Sle_monocularSLAM.dir/src/map.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Sle_monocularSLAM.dir/src/map.cpp.o -c /media/oym/source/oym/SLE_monocularSLAM/src/map.cpp
+
+CMakeFiles/Sle_monocularSLAM.dir/src/map.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Sle_monocularSLAM.dir/src/map.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/oym/source/oym/SLE_monocularSLAM/src/map.cpp > CMakeFiles/Sle_monocularSLAM.dir/src/map.cpp.i
+
+CMakeFiles/Sle_monocularSLAM.dir/src/map.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Sle_monocularSLAM.dir/src/map.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/oym/source/oym/SLE_monocularSLAM/src/map.cpp -o CMakeFiles/Sle_monocularSLAM.dir/src/map.cpp.s
+
+CMakeFiles/Sle_monocularSLAM.dir/src/map.cpp.o.requires:
+
+.PHONY : CMakeFiles/Sle_monocularSLAM.dir/src/map.cpp.o.requires
+
+CMakeFiles/Sle_monocularSLAM.dir/src/map.cpp.o.provides: CMakeFiles/Sle_monocularSLAM.dir/src/map.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Sle_monocularSLAM.dir/build.make CMakeFiles/Sle_monocularSLAM.dir/src/map.cpp.o.provides.build
+.PHONY : CMakeFiles/Sle_monocularSLAM.dir/src/map.cpp.o.provides
+
+CMakeFiles/Sle_monocularSLAM.dir/src/map.cpp.o.provides.build: CMakeFiles/Sle_monocularSLAM.dir/src/map.cpp.o
+
+
+CMakeFiles/Sle_monocularSLAM.dir/src/frame.cpp.o: CMakeFiles/Sle_monocularSLAM.dir/flags.make
+CMakeFiles/Sle_monocularSLAM.dir/src/frame.cpp.o: ../src/frame.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/oym/source/oym/SLE_monocularSLAM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Sle_monocularSLAM.dir/src/frame.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Sle_monocularSLAM.dir/src/frame.cpp.o -c /media/oym/source/oym/SLE_monocularSLAM/src/frame.cpp
+
+CMakeFiles/Sle_monocularSLAM.dir/src/frame.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Sle_monocularSLAM.dir/src/frame.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/oym/source/oym/SLE_monocularSLAM/src/frame.cpp > CMakeFiles/Sle_monocularSLAM.dir/src/frame.cpp.i
+
+CMakeFiles/Sle_monocularSLAM.dir/src/frame.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Sle_monocularSLAM.dir/src/frame.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/oym/source/oym/SLE_monocularSLAM/src/frame.cpp -o CMakeFiles/Sle_monocularSLAM.dir/src/frame.cpp.s
+
+CMakeFiles/Sle_monocularSLAM.dir/src/frame.cpp.o.requires:
+
+.PHONY : CMakeFiles/Sle_monocularSLAM.dir/src/frame.cpp.o.requires
+
+CMakeFiles/Sle_monocularSLAM.dir/src/frame.cpp.o.provides: CMakeFiles/Sle_monocularSLAM.dir/src/frame.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Sle_monocularSLAM.dir/build.make CMakeFiles/Sle_monocularSLAM.dir/src/frame.cpp.o.provides.build
+.PHONY : CMakeFiles/Sle_monocularSLAM.dir/src/frame.cpp.o.provides
+
+CMakeFiles/Sle_monocularSLAM.dir/src/frame.cpp.o.provides.build: CMakeFiles/Sle_monocularSLAM.dir/src/frame.cpp.o
+
+
+CMakeFiles/Sle_monocularSLAM.dir/src/config.cpp.o: CMakeFiles/Sle_monocularSLAM.dir/flags.make
+CMakeFiles/Sle_monocularSLAM.dir/src/config.cpp.o: ../src/config.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/oym/source/oym/SLE_monocularSLAM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Sle_monocularSLAM.dir/src/config.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Sle_monocularSLAM.dir/src/config.cpp.o -c /media/oym/source/oym/SLE_monocularSLAM/src/config.cpp
+
+CMakeFiles/Sle_monocularSLAM.dir/src/config.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Sle_monocularSLAM.dir/src/config.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/oym/source/oym/SLE_monocularSLAM/src/config.cpp > CMakeFiles/Sle_monocularSLAM.dir/src/config.cpp.i
+
+CMakeFiles/Sle_monocularSLAM.dir/src/config.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Sle_monocularSLAM.dir/src/config.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/oym/source/oym/SLE_monocularSLAM/src/config.cpp -o CMakeFiles/Sle_monocularSLAM.dir/src/config.cpp.s
+
+CMakeFiles/Sle_monocularSLAM.dir/src/config.cpp.o.requires:
+
+.PHONY : CMakeFiles/Sle_monocularSLAM.dir/src/config.cpp.o.requires
+
+CMakeFiles/Sle_monocularSLAM.dir/src/config.cpp.o.provides: CMakeFiles/Sle_monocularSLAM.dir/src/config.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Sle_monocularSLAM.dir/build.make CMakeFiles/Sle_monocularSLAM.dir/src/config.cpp.o.provides.build
+.PHONY : CMakeFiles/Sle_monocularSLAM.dir/src/config.cpp.o.provides
+
+CMakeFiles/Sle_monocularSLAM.dir/src/config.cpp.o.provides.build: CMakeFiles/Sle_monocularSLAM.dir/src/config.cpp.o
+
+
+CMakeFiles/Sle_monocularSLAM.dir/src/visual_odometry.cpp.o: CMakeFiles/Sle_monocularSLAM.dir/flags.make
+CMakeFiles/Sle_monocularSLAM.dir/src/visual_odometry.cpp.o: ../src/visual_odometry.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/oym/source/oym/SLE_monocularSLAM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Sle_monocularSLAM.dir/src/visual_odometry.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Sle_monocularSLAM.dir/src/visual_odometry.cpp.o -c /media/oym/source/oym/SLE_monocularSLAM/src/visual_odometry.cpp
+
+CMakeFiles/Sle_monocularSLAM.dir/src/visual_odometry.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Sle_monocularSLAM.dir/src/visual_odometry.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/oym/source/oym/SLE_monocularSLAM/src/visual_odometry.cpp > CMakeFiles/Sle_monocularSLAM.dir/src/visual_odometry.cpp.i
+
+CMakeFiles/Sle_monocularSLAM.dir/src/visual_odometry.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Sle_monocularSLAM.dir/src/visual_odometry.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/oym/source/oym/SLE_monocularSLAM/src/visual_odometry.cpp -o CMakeFiles/Sle_monocularSLAM.dir/src/visual_odometry.cpp.s
+
+CMakeFiles/Sle_monocularSLAM.dir/src/visual_odometry.cpp.o.requires:
+
+.PHONY : CMakeFiles/Sle_monocularSLAM.dir/src/visual_odometry.cpp.o.requires
+
+CMakeFiles/Sle_monocularSLAM.dir/src/visual_odometry.cpp.o.provides: CMakeFiles/Sle_monocularSLAM.dir/src/visual_odometry.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Sle_monocularSLAM.dir/build.make CMakeFiles/Sle_monocularSLAM.dir/src/visual_odometry.cpp.o.provides.build
+.PHONY : CMakeFiles/Sle_monocularSLAM.dir/src/visual_odometry.cpp.o.provides
+
+CMakeFiles/Sle_monocularSLAM.dir/src/visual_odometry.cpp.o.provides.build: CMakeFiles/Sle_monocularSLAM.dir/src/visual_odometry.cpp.o
+
+
+CMakeFiles/Sle_monocularSLAM.dir/src/sift_line_endpoint.cpp.o: CMakeFiles/Sle_monocularSLAM.dir/flags.make
+CMakeFiles/Sle_monocularSLAM.dir/src/sift_line_endpoint.cpp.o: ../src/sift_line_endpoint.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/oym/source/oym/SLE_monocularSLAM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Sle_monocularSLAM.dir/src/sift_line_endpoint.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Sle_monocularSLAM.dir/src/sift_line_endpoint.cpp.o -c /media/oym/source/oym/SLE_monocularSLAM/src/sift_line_endpoint.cpp
+
+CMakeFiles/Sle_monocularSLAM.dir/src/sift_line_endpoint.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Sle_monocularSLAM.dir/src/sift_line_endpoint.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/oym/source/oym/SLE_monocularSLAM/src/sift_line_endpoint.cpp > CMakeFiles/Sle_monocularSLAM.dir/src/sift_line_endpoint.cpp.i
+
+CMakeFiles/Sle_monocularSLAM.dir/src/sift_line_endpoint.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Sle_monocularSLAM.dir/src/sift_line_endpoint.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/oym/source/oym/SLE_monocularSLAM/src/sift_line_endpoint.cpp -o CMakeFiles/Sle_monocularSLAM.dir/src/sift_line_endpoint.cpp.s
+
+CMakeFiles/Sle_monocularSLAM.dir/src/sift_line_endpoint.cpp.o.requires:
+
+.PHONY : CMakeFiles/Sle_monocularSLAM.dir/src/sift_line_endpoint.cpp.o.requires
+
+CMakeFiles/Sle_monocularSLAM.dir/src/sift_line_endpoint.cpp.o.provides: CMakeFiles/Sle_monocularSLAM.dir/src/sift_line_endpoint.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Sle_monocularSLAM.dir/build.make CMakeFiles/Sle_monocularSLAM.dir/src/sift_line_endpoint.cpp.o.provides.build
+.PHONY : CMakeFiles/Sle_monocularSLAM.dir/src/sift_line_endpoint.cpp.o.provides
+
+CMakeFiles/Sle_monocularSLAM.dir/src/sift_line_endpoint.cpp.o.provides.build: CMakeFiles/Sle_monocularSLAM.dir/src/sift_line_endpoint.cpp.o
+
+
+CMakeFiles/Sle_monocularSLAM.dir/src/initialize_mono.cpp.o: CMakeFiles/Sle_monocularSLAM.dir/flags.make
+CMakeFiles/Sle_monocularSLAM.dir/src/initialize_mono.cpp.o: ../src/initialize_mono.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/oym/source/oym/SLE_monocularSLAM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Sle_monocularSLAM.dir/src/initialize_mono.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Sle_monocularSLAM.dir/src/initialize_mono.cpp.o -c /media/oym/source/oym/SLE_monocularSLAM/src/initialize_mono.cpp
+
+CMakeFiles/Sle_monocularSLAM.dir/src/initialize_mono.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Sle_monocularSLAM.dir/src/initialize_mono.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/oym/source/oym/SLE_monocularSLAM/src/initialize_mono.cpp > CMakeFiles/Sle_monocularSLAM.dir/src/initialize_mono.cpp.i
+
+CMakeFiles/Sle_monocularSLAM.dir/src/initialize_mono.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Sle_monocularSLAM.dir/src/initialize_mono.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/oym/source/oym/SLE_monocularSLAM/src/initialize_mono.cpp -o CMakeFiles/Sle_monocularSLAM.dir/src/initialize_mono.cpp.s
+
+CMakeFiles/Sle_monocularSLAM.dir/src/initialize_mono.cpp.o.requires:
+
+.PHONY : CMakeFiles/Sle_monocularSLAM.dir/src/initialize_mono.cpp.o.requires
+
+CMakeFiles/Sle_monocularSLAM.dir/src/initialize_mono.cpp.o.provides: CMakeFiles/Sle_monocularSLAM.dir/src/initialize_mono.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Sle_monocularSLAM.dir/build.make CMakeFiles/Sle_monocularSLAM.dir/src/initialize_mono.cpp.o.provides.build
+.PHONY : CMakeFiles/Sle_monocularSLAM.dir/src/initialize_mono.cpp.o.provides
+
+CMakeFiles/Sle_monocularSLAM.dir/src/initialize_mono.cpp.o.provides.build: CMakeFiles/Sle_monocularSLAM.dir/src/initialize_mono.cpp.o
+
+
+CMakeFiles/Sle_monocularSLAM.dir/src/mappoint.cpp.o: CMakeFiles/Sle_monocularSLAM.dir/flags.make
+CMakeFiles/Sle_monocularSLAM.dir/src/mappoint.cpp.o: ../src/mappoint.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/oym/source/oym/SLE_monocularSLAM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Sle_monocularSLAM.dir/src/mappoint.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Sle_monocularSLAM.dir/src/mappoint.cpp.o -c /media/oym/source/oym/SLE_monocularSLAM/src/mappoint.cpp
+
+CMakeFiles/Sle_monocularSLAM.dir/src/mappoint.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Sle_monocularSLAM.dir/src/mappoint.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/oym/source/oym/SLE_monocularSLAM/src/mappoint.cpp > CMakeFiles/Sle_monocularSLAM.dir/src/mappoint.cpp.i
+
+CMakeFiles/Sle_monocularSLAM.dir/src/mappoint.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Sle_monocularSLAM.dir/src/mappoint.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/oym/source/oym/SLE_monocularSLAM/src/mappoint.cpp -o CMakeFiles/Sle_monocularSLAM.dir/src/mappoint.cpp.s
+
+CMakeFiles/Sle_monocularSLAM.dir/src/mappoint.cpp.o.requires:
+
+.PHONY : CMakeFiles/Sle_monocularSLAM.dir/src/mappoint.cpp.o.requires
+
+CMakeFiles/Sle_monocularSLAM.dir/src/mappoint.cpp.o.provides: CMakeFiles/Sle_monocularSLAM.dir/src/mappoint.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Sle_monocularSLAM.dir/build.make CMakeFiles/Sle_monocularSLAM.dir/src/mappoint.cpp.o.provides.build
+.PHONY : CMakeFiles/Sle_monocularSLAM.dir/src/mappoint.cpp.o.provides
+
+CMakeFiles/Sle_monocularSLAM.dir/src/mappoint.cpp.o.provides.build: CMakeFiles/Sle_monocularSLAM.dir/src/mappoint.cpp.o
+
+
+CMakeFiles/Sle_monocularSLAM.dir/src/camera.cpp.o: CMakeFiles/Sle_monocularSLAM.dir/flags.make
+CMakeFiles/Sle_monocularSLAM.dir/src/camera.cpp.o: ../src/camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/oym/source/oym/SLE_monocularSLAM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Sle_monocularSLAM.dir/src/camera.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Sle_monocularSLAM.dir/src/camera.cpp.o -c /media/oym/source/oym/SLE_monocularSLAM/src/camera.cpp
+
+CMakeFiles/Sle_monocularSLAM.dir/src/camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Sle_monocularSLAM.dir/src/camera.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/oym/source/oym/SLE_monocularSLAM/src/camera.cpp > CMakeFiles/Sle_monocularSLAM.dir/src/camera.cpp.i
+
+CMakeFiles/Sle_monocularSLAM.dir/src/camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Sle_monocularSLAM.dir/src/camera.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/oym/source/oym/SLE_monocularSLAM/src/camera.cpp -o CMakeFiles/Sle_monocularSLAM.dir/src/camera.cpp.s
+
+CMakeFiles/Sle_monocularSLAM.dir/src/camera.cpp.o.requires:
+
+.PHONY : CMakeFiles/Sle_monocularSLAM.dir/src/camera.cpp.o.requires
+
+CMakeFiles/Sle_monocularSLAM.dir/src/camera.cpp.o.provides: CMakeFiles/Sle_monocularSLAM.dir/src/camera.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Sle_monocularSLAM.dir/build.make CMakeFiles/Sle_monocularSLAM.dir/src/camera.cpp.o.provides.build
+.PHONY : CMakeFiles/Sle_monocularSLAM.dir/src/camera.cpp.o.provides
+
+CMakeFiles/Sle_monocularSLAM.dir/src/camera.cpp.o.provides.build: CMakeFiles/Sle_monocularSLAM.dir/src/camera.cpp.o
+
+
 # Object files for target Sle_monocularSLAM
 Sle_monocularSLAM_OBJECTS = \
 "CMakeFiles/Sle_monocularSLAM.dir/3rd_party/sophus/scso3.cpp.o" \
@@ -283,7 +475,15 @@ Sle_monocularSLAM_OBJECTS = \
 "CMakeFiles/Sle_monocularSLAM.dir/3rd_party/sophus/so3.cpp.o" \
 "CMakeFiles/Sle_monocularSLAM.dir/3rd_party/LSDDetector_custom.cpp.o" \
 "CMakeFiles/Sle_monocularSLAM.dir/3rd_party/DBoW2/DUtils/Random.cpp.o" \
-"CMakeFiles/Sle_monocularSLAM.dir/3rd_party/DBoW2/DUtils/Timestamp.cpp.o"
+"CMakeFiles/Sle_monocularSLAM.dir/3rd_party/DBoW2/DUtils/Timestamp.cpp.o" \
+"CMakeFiles/Sle_monocularSLAM.dir/src/map.cpp.o" \
+"CMakeFiles/Sle_monocularSLAM.dir/src/frame.cpp.o" \
+"CMakeFiles/Sle_monocularSLAM.dir/src/config.cpp.o" \
+"CMakeFiles/Sle_monocularSLAM.dir/src/visual_odometry.cpp.o" \
+"CMakeFiles/Sle_monocularSLAM.dir/src/sift_line_endpoint.cpp.o" \
+"CMakeFiles/Sle_monocularSLAM.dir/src/initialize_mono.cpp.o" \
+"CMakeFiles/Sle_monocularSLAM.dir/src/mappoint.cpp.o" \
+"CMakeFiles/Sle_monocularSLAM.dir/src/camera.cpp.o"
 
 # External object files for target Sle_monocularSLAM
 Sle_monocularSLAM_EXTERNAL_OBJECTS =
@@ -297,9 +497,17 @@ lib/libSle_monocularSLAM.a: CMakeFiles/Sle_monocularSLAM.dir/3rd_party/sophus/so
 lib/libSle_monocularSLAM.a: CMakeFiles/Sle_monocularSLAM.dir/3rd_party/LSDDetector_custom.cpp.o
 lib/libSle_monocularSLAM.a: CMakeFiles/Sle_monocularSLAM.dir/3rd_party/DBoW2/DUtils/Random.cpp.o
 lib/libSle_monocularSLAM.a: CMakeFiles/Sle_monocularSLAM.dir/3rd_party/DBoW2/DUtils/Timestamp.cpp.o
+lib/libSle_monocularSLAM.a: CMakeFiles/Sle_monocularSLAM.dir/src/map.cpp.o
+lib/libSle_monocularSLAM.a: CMakeFiles/Sle_monocularSLAM.dir/src/frame.cpp.o
+lib/libSle_monocularSLAM.a: CMakeFiles/Sle_monocularSLAM.dir/src/config.cpp.o
+lib/libSle_monocularSLAM.a: CMakeFiles/Sle_monocularSLAM.dir/src/visual_odometry.cpp.o
+lib/libSle_monocularSLAM.a: CMakeFiles/Sle_monocularSLAM.dir/src/sift_line_endpoint.cpp.o
+lib/libSle_monocularSLAM.a: CMakeFiles/Sle_monocularSLAM.dir/src/initialize_mono.cpp.o
+lib/libSle_monocularSLAM.a: CMakeFiles/Sle_monocularSLAM.dir/src/mappoint.cpp.o
+lib/libSle_monocularSLAM.a: CMakeFiles/Sle_monocularSLAM.dir/src/camera.cpp.o
 lib/libSle_monocularSLAM.a: CMakeFiles/Sle_monocularSLAM.dir/build.make
 lib/libSle_monocularSLAM.a: CMakeFiles/Sle_monocularSLAM.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/oym/source/oym/SLE_monocularSLAM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library lib/libSle_monocularSLAM.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/oym/source/oym/SLE_monocularSLAM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX static library lib/libSle_monocularSLAM.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/Sle_monocularSLAM.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Sle_monocularSLAM.dir/link.txt --verbose=$(VERBOSE)
 
@@ -317,6 +525,14 @@ CMakeFiles/Sle_monocularSLAM.dir/requires: CMakeFiles/Sle_monocularSLAM.dir/3rd_
 CMakeFiles/Sle_monocularSLAM.dir/requires: CMakeFiles/Sle_monocularSLAM.dir/3rd_party/LSDDetector_custom.cpp.o.requires
 CMakeFiles/Sle_monocularSLAM.dir/requires: CMakeFiles/Sle_monocularSLAM.dir/3rd_party/DBoW2/DUtils/Random.cpp.o.requires
 CMakeFiles/Sle_monocularSLAM.dir/requires: CMakeFiles/Sle_monocularSLAM.dir/3rd_party/DBoW2/DUtils/Timestamp.cpp.o.requires
+CMakeFiles/Sle_monocularSLAM.dir/requires: CMakeFiles/Sle_monocularSLAM.dir/src/map.cpp.o.requires
+CMakeFiles/Sle_monocularSLAM.dir/requires: CMakeFiles/Sle_monocularSLAM.dir/src/frame.cpp.o.requires
+CMakeFiles/Sle_monocularSLAM.dir/requires: CMakeFiles/Sle_monocularSLAM.dir/src/config.cpp.o.requires
+CMakeFiles/Sle_monocularSLAM.dir/requires: CMakeFiles/Sle_monocularSLAM.dir/src/visual_odometry.cpp.o.requires
+CMakeFiles/Sle_monocularSLAM.dir/requires: CMakeFiles/Sle_monocularSLAM.dir/src/sift_line_endpoint.cpp.o.requires
+CMakeFiles/Sle_monocularSLAM.dir/requires: CMakeFiles/Sle_monocularSLAM.dir/src/initialize_mono.cpp.o.requires
+CMakeFiles/Sle_monocularSLAM.dir/requires: CMakeFiles/Sle_monocularSLAM.dir/src/mappoint.cpp.o.requires
+CMakeFiles/Sle_monocularSLAM.dir/requires: CMakeFiles/Sle_monocularSLAM.dir/src/camera.cpp.o.requires
 
 .PHONY : CMakeFiles/Sle_monocularSLAM.dir/requires
 

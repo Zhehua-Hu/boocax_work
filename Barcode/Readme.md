@@ -15,10 +15,11 @@ opencv3
 
 运行步骤:
 首先将工程克隆到自己的目标文件夹
-
+git clone https://github.com/oym1994/boocax_work
+注意,无法单独克隆该项目,必须克隆整个工程项目
 
 到工程目录新建build文件夹并编译
-cd Barcode
+cd boocax_work/Barcode
 mkdir build
 cmake ..
 make
@@ -27,5 +28,5 @@ make
 
 ./bin/example/test_barcode "../img/initial_picture"
 若是自己的数据集
-./bin/example/test_barcode path    path指代数据集目录,注意要加"",如 "/home/data"
+./bin/example/test_barcode path    path指代数据集目录,必须包含图片以及条形码位置信息的txt文件,注意要加"",如 "/home/data"
 

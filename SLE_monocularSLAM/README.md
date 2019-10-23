@@ -1,16 +1,18 @@
 # SLE_monocularSLAM
-此次commit时间: 2019.06.27
-1,增加了轨迹显示;
-2,桌腿检测
-3,增加新文件
-  SLE_monocularSLAM/test/find_tableleg.cpp        寻找桌腿定点
-  SLE_monocularSLAM/test/pose_of_tableleg.cpp     计算相对桌腿位姿
-  SLE_monocularSLAM/test/test_calhist.cpp         测试计算直方图 
-  SLE_monocularSLAM/test/test_harries_corner.cpp  测试Harries角点
-  SLE_monocularSLAM/test/test_picture.cpp         用图片做测试
-  SLE_monocularSLAM/test/test_redfile.cpp         测试读取文件
-  SLE_monocularSLAM/test/test_vedio.cpp           用视频做测试
+程序思路请参阅目录下的程序说明文档
 
-注意运行的时候config/default.yaml配置文件要放在编译的可执行文件目录下
+第一步:将代码clone到本地
+git clone https://github.com/oym1994/boocax_work
+注意,无法单独克隆该项目,必须克隆整个工程项目
 
+第二步:进入克隆的工程项目目录下,并新建文件夹build
+cd boocax_work/SLE_monocularSLAM
+mkdir build
+第三步:进入build文件夹,并编译
+cd build
+cmake ..
+make
+
+第四步:运行
+./bin/test_vedio
 

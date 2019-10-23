@@ -18,9 +18,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../include"
   "/usr/local/lib/cmake/Pangolin/../../../include"
   "/usr/include/eigen3"
-  "/opt/ros/kinetic/include/opencv-3.3.1-dev"
-  "/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv"
   "/usr/local/include"
+  "/usr/local/include/opencv"
   )
 
 # Targets to which this target links.

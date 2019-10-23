@@ -1,4 +1,4 @@
-/media/oym/source/oym/SLE_monocularSLAM/build/CMakeFiles/edit_cache.dir
 /media/oym/source/oym/SLE_monocularSLAM/build/CMakeFiles/rebuild_cache.dir
-/media/oym/source/oym/SLE_monocularSLAM/build/CMakeFiles/srclib.dir
+/media/oym/source/oym/SLE_monocularSLAM/build/CMakeFiles/edit_cache.dir
+/media/oym/source/oym/SLE_monocularSLAM/build/CMakeFiles/test_vedio.dir
 /media/oym/source/oym/SLE_monocularSLAM/build/CMakeFiles/Sle_monocularSLAM.dir

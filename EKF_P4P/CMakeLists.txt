@@ -28,7 +28,7 @@ endif()
 
 # required libraries
 find_package(Pangolin QUIET)
-find_package(OpenCV 3.0 QUIET)
+find_package(OpenCV 3.2.0 EXACT)
 
 if(Pangolin_FOUND)
  message("Find_Pangolin")
@@ -39,7 +39,7 @@ endif()
 if(OpenCV_FOUND)
   message("Find_OpenCV")
 else()
-  message(FATAL_ERROR "Not Find OpenCV")
+  message(FATAL_ERROR "Not Find OpenCV3.2.0")
 endif()
 
 

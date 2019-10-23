@@ -44,7 +44,6 @@ bool Vehicle::observe_camera(){
     cv::Vec3f euler_angle(-90*M_PI/180.0,(90+yaw)*M_PI/180.0,0.0); //X-Y-Z
     cv::Mat Rot = eulerAnglesToRotationMatrix(euler_angle).clone();
     Rot.copyTo(cam->R);
-//    cout<<endl<<"=============="<<endl<<cam->R<<endl;
     cv::Mat pos = (cv::Mat_<float>(3, 1) << pos_x_w,pos_y_w, 1);
     pos.copyTo(cam->pos_xyz);
     cam->t = -cam->R * cam->pos_xyz;
@@ -82,21 +81,15 @@ void Vehicle::copy(Vehicle vehicle){
 }
 
 void Vehicle::refresh_lastpose(){
-    cout<<"13"<<endl;
     cout<<pos_x_w<<pos_y_w<<yaw<<endl;
     pose->cam_pos = cv::Vec3f(pos_x_w,pos_y_w,yaw);
-    cout<<"10"<<endl;
     pose->m_campos = cv::Vec3f(m_posx_w,m_posy_w,m_yaw);
-    cout<<"11"<<endl;
-
     pose->isnewone = 1;
-    cout<<"12"<<endl;
 
 }
 
 Vehicle::Vehicle(const string &strSettingPath):m_posx_w(0),m_posy_w(0),m_yaw(0),roll(0.0),pitch(0.0),
 m_yawspeed(0),m_speed_b(0),speed_b(0),yaw_speed(0){
-       cout<<"6"<<endl;
        pose = new new_pose;
        cv::FileStorage fSettings(strSettingPath, cv::FileStorage::READ);
        posx_stddev = fSettings["posx_stddev"];
@@ -105,8 +98,6 @@ m_yawspeed(0),m_speed_b(0),speed_b(0),yaw_speed(0){
        yawspeed_stddev = fSettings["yawspeed_stddev"];
        speed_stddev = fSettings["speed_stddev"];
        dt = fSettings["dt"];
-       cout<<"7"<<endl;
-
        std::normal_distribution<double> dist_pos(0, posx_stddev);
        std::normal_distribution<double> dist_yaw(0, yaw_stddev);  //角度单位为度
        pos_x_w = m_posx_w + dist_pos(generator);
@@ -115,8 +106,5 @@ m_yawspeed(0),m_speed_b(0),speed_b(0),yaw_speed(0){
        dist_v = std::normal_distribution<double>(0, speed_stddev);
        dist_w = std::normal_distribution<double>(0, yawspeed_stddev);
        R = eulerAnglesToRotationMatrix(Vec3f(0,0,yaw)).clone();
-       cout<<"8"<<endl;
-
        refresh_lastpose();
-       cout<<"9"<<endl;
 }

@@ -1,2 +1,0 @@
-/usr/bin/ar qc lib/libsrclib.a  CMakeFiles/srclib.dir/src/map.cpp.o CMakeFiles/srclib.dir/src/g2o_types.cpp.o CMakeFiles/srclib.dir/src/frame.cpp.o CMakeFiles/srclib.dir/src/config.cpp.o CMakeFiles/srclib.dir/src/visual_odometry.cpp.o CMakeFiles/srclib.dir/src/sift_line_endpoint.cpp.o CMakeFiles/srclib.dir/src/initialize_mono.cpp.o CMakeFiles/srclib.dir/src/mappoint.cpp.o
-/usr/bin/ranlib lib/libsrclib.a

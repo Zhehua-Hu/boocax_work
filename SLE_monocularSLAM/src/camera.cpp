@@ -1,5 +1,5 @@
-#include "./include/camera.h"
-#include "./include/config.h"
+#include "camera.h"
+#include "config.h"
 
 namespace SLE_monocularSLAM{
 

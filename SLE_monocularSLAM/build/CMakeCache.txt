@@ -196,9 +196,6 @@ Sle_monocularSLAM_LIB_DEPENDS:STATIC=general;opencv_calib3d;general;opencv_core;
 //Value Computed by CMake
 Sle_monocularSLAM_SOURCE_DIR:STATIC=/media/oym/source/oym/SLE_monocularSLAM
 
-//Dependencies for target
-srclib_LIB_DEPENDS:STATIC=
-
 
 ########################
 # INTERNAL cache entries

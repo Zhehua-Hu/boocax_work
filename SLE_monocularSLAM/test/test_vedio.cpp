@@ -1,11 +1,11 @@
-#include "include/visual_odometry.h"
+#include "visual_odometry.h"
 
 #if TEST_VEDIO
 
 int main(int argc, char *argv[])
 {
     string outputVideoPath = "../vedio/test_color.mp4";  //视频文件
-    string file_dir = "default.yaml";   //配置文件
+    string file_dir = "../config/default.yaml";   //配置文件
     SLE_monocularSLAM::Config::setParameterFile ( file_dir);
     SLE_monocularSLAM::VisualOdometry::Ptr vo ( new SLE_monocularSLAM::VisualOdometry );
     SLE_monocularSLAM::Camera::Ptr camera ( new SLE_monocularSLAM::Camera );
@@ -35,11 +35,11 @@ int main(int argc, char *argv[])
 
     equalizeHist(frame,frame);
 
-    imshow("source_img",frame);
+    imshow("src_image",frame);
 
     Mat dst = frame.clone();
 
-    imshow("equHist",frame);
+    imshow("Equal_Hist",frame);
 
     vo->addimage ( frame );
 

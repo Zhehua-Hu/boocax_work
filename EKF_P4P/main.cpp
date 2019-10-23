@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
    std::uniform_real_distribution<float> dis2(-5, 5);      //Y向
    std::uniform_real_distribution<float> dis3(0.5, 1.5);   //Z向,摄像头高度范围
    OutFile.open("test_PNP.txt",ios::app);
-   float y_start =0,y_end = 1,z_start = 0.5,z_end = 1.5;
+   float y_start =0,y_end = 20,z_start = 0.5,z_end = 1.5;
    float y=y_start,z=z_start;
    for(int i=0;i<100000;i++){
        y = y+barcode_width * i;
@@ -23,8 +23,11 @@ int main(int argc, char *argv[])
        }
    }
    System localization(landmarks,parameterFile);
+   while(true){
    localization.run(0,1,0);
    cv::waitKey(0);
+   }
+   cv::waitKey(0);
    OutFile.close();
-   return 1;
+   return 0;
 }

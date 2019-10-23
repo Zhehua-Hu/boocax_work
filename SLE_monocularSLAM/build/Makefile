@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /media/oym/source/oym/SLE_monocularSLAM/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/opt/cmake-3.9.1/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,6 +66,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/opt/cmake-3.9.1/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named srclib
+# Target rules for targets named test_vedio
 
 # Build rule for target.
-srclib: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 srclib
-.PHONY : srclib
+test_vedio: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_vedio
+.PHONY : test_vedio
 
 # fast build rule for target.
-srclib/fast:
-	$(MAKE) -f CMakeFiles/srclib.dir/build.make CMakeFiles/srclib.dir/build
-.PHONY : srclib/fast
+test_vedio/fast:
+	$(MAKE) -f CMakeFiles/test_vedio.dir/build.make CMakeFiles/test_vedio.dir/build
+.PHONY : test_vedio/fast
 
 #=============================================================================
 # Target rules for targets named Sle_monocularSLAM
@@ -379,13 +379,40 @@ Sle_monocularSLAM/fast:
 	$(MAKE) -f CMakeFiles/Sle_monocularSLAM.dir/build.make CMakeFiles/Sle_monocularSLAM.dir/3rd_party/sophus/so3.cpp.s
 .PHONY : 3rd_party/sophus/so3.cpp.s
 
+src/camera.o: src/camera.cpp.o
+
+.PHONY : src/camera.o
+
+# target to build an object file
+src/camera.cpp.o:
+	$(MAKE) -f CMakeFiles/Sle_monocularSLAM.dir/build.make CMakeFiles/Sle_monocularSLAM.dir/src/camera.cpp.o
+.PHONY : src/camera.cpp.o
+
+src/camera.i: src/camera.cpp.i
+
+.PHONY : src/camera.i
+
+# target to preprocess a source file
+src/camera.cpp.i:
+	$(MAKE) -f CMakeFiles/Sle_monocularSLAM.dir/build.make CMakeFiles/Sle_monocularSLAM.dir/src/camera.cpp.i
+.PHONY : src/camera.cpp.i
+
+src/camera.s: src/camera.cpp.s
+
+.PHONY : src/camera.s
+
+# target to generate assembly for a file
+src/camera.cpp.s:
+	$(MAKE) -f CMakeFiles/Sle_monocularSLAM.dir/build.make CMakeFiles/Sle_monocularSLAM.dir/src/camera.cpp.s
+.PHONY : src/camera.cpp.s
+
 src/config.o: src/config.cpp.o
 
 .PHONY : src/config.o
 
 # target to build an object file
 src/config.cpp.o:
-	$(MAKE) -f CMakeFiles/srclib.dir/build.make CMakeFiles/srclib.dir/src/config.cpp.o
+	$(MAKE) -f CMakeFiles/Sle_monocularSLAM.dir/build.make CMakeFiles/Sle_monocularSLAM.dir/src/config.cpp.o
 .PHONY : src/config.cpp.o
 
 src/config.i: src/config.cpp.i
@@ -394,7 +421,7 @@ src/config.i: src/config.cpp.i
 
 # target to preprocess a source file
 src/config.cpp.i:
-	$(MAKE) -f CMakeFiles/srclib.dir/build.make CMakeFiles/srclib.dir/src/config.cpp.i
+	$(MAKE) -f CMakeFiles/Sle_monocularSLAM.dir/build.make CMakeFiles/Sle_monocularSLAM.dir/src/config.cpp.i
 .PHONY : src/config.cpp.i
 
 src/config.s: src/config.cpp.s
@@ -403,7 +430,7 @@ src/config.s: src/config.cpp.s
 
 # target to generate assembly for a file
 src/config.cpp.s:
-	$(MAKE) -f CMakeFiles/srclib.dir/build.make CMakeFiles/srclib.dir/src/config.cpp.s
+	$(MAKE) -f CMakeFiles/Sle_monocularSLAM.dir/build.make CMakeFiles/Sle_monocularSLAM.dir/src/config.cpp.s
 .PHONY : src/config.cpp.s
 
 src/frame.o: src/frame.cpp.o
@@ -412,7 +439,7 @@ src/frame.o: src/frame.cpp.o
 
 # target to build an object file
 src/frame.cpp.o:
-	$(MAKE) -f CMakeFiles/srclib.dir/build.make CMakeFiles/srclib.dir/src/frame.cpp.o
+	$(MAKE) -f CMakeFiles/Sle_monocularSLAM.dir/build.make CMakeFiles/Sle_monocularSLAM.dir/src/frame.cpp.o
 .PHONY : src/frame.cpp.o
 
 src/frame.i: src/frame.cpp.i
@@ -421,7 +448,7 @@ src/frame.i: src/frame.cpp.i
 
 # target to preprocess a source file
 src/frame.cpp.i:
-	$(MAKE) -f CMakeFiles/srclib.dir/build.make CMakeFiles/srclib.dir/src/frame.cpp.i
+	$(MAKE) -f CMakeFiles/Sle_monocularSLAM.dir/build.make CMakeFiles/Sle_monocularSLAM.dir/src/frame.cpp.i
 .PHONY : src/frame.cpp.i
 
 src/frame.s: src/frame.cpp.s
@@ -430,35 +457,8 @@ src/frame.s: src/frame.cpp.s
 
 # target to generate assembly for a file
 src/frame.cpp.s:
-	$(MAKE) -f CMakeFiles/srclib.dir/build.make CMakeFiles/srclib.dir/src/frame.cpp.s
+	$(MAKE) -f CMakeFiles/Sle_monocularSLAM.dir/build.make CMakeFiles/Sle_monocularSLAM.dir/src/frame.cpp.s
 .PHONY : src/frame.cpp.s
-
-src/g2o_types.o: src/g2o_types.cpp.o
-
-.PHONY : src/g2o_types.o
-
-# target to build an object file
-src/g2o_types.cpp.o:
-	$(MAKE) -f CMakeFiles/srclib.dir/build.make CMakeFiles/srclib.dir/src/g2o_types.cpp.o
-.PHONY : src/g2o_types.cpp.o
-
-src/g2o_types.i: src/g2o_types.cpp.i
-
-.PHONY : src/g2o_types.i
-
-# target to preprocess a source file
-src/g2o_types.cpp.i:
-	$(MAKE) -f CMakeFiles/srclib.dir/build.make CMakeFiles/srclib.dir/src/g2o_types.cpp.i
-.PHONY : src/g2o_types.cpp.i
-
-src/g2o_types.s: src/g2o_types.cpp.s
-
-.PHONY : src/g2o_types.s
-
-# target to generate assembly for a file
-src/g2o_types.cpp.s:
-	$(MAKE) -f CMakeFiles/srclib.dir/build.make CMakeFiles/srclib.dir/src/g2o_types.cpp.s
-.PHONY : src/g2o_types.cpp.s
 
 src/initialize_mono.o: src/initialize_mono.cpp.o
 
@@ -466,7 +466,7 @@ src/initialize_mono.o: src/initialize_mono.cpp.o
 
 # target to build an object file
 src/initialize_mono.cpp.o:
-	$(MAKE) -f CMakeFiles/srclib.dir/build.make CMakeFiles/srclib.dir/src/initialize_mono.cpp.o
+	$(MAKE) -f CMakeFiles/Sle_monocularSLAM.dir/build.make CMakeFiles/Sle_monocularSLAM.dir/src/initialize_mono.cpp.o
 .PHONY : src/initialize_mono.cpp.o
 
 src/initialize_mono.i: src/initialize_mono.cpp.i
@@ -475,7 +475,7 @@ src/initialize_mono.i: src/initialize_mono.cpp.i
 
 # target to preprocess a source file
 src/initialize_mono.cpp.i:
-	$(MAKE) -f CMakeFiles/srclib.dir/build.make CMakeFiles/srclib.dir/src/initialize_mono.cpp.i
+	$(MAKE) -f CMakeFiles/Sle_monocularSLAM.dir/build.make CMakeFiles/Sle_monocularSLAM.dir/src/initialize_mono.cpp.i
 .PHONY : src/initialize_mono.cpp.i
 
 src/initialize_mono.s: src/initialize_mono.cpp.s
@@ -484,7 +484,7 @@ src/initialize_mono.s: src/initialize_mono.cpp.s
 
 # target to generate assembly for a file
 src/initialize_mono.cpp.s:
-	$(MAKE) -f CMakeFiles/srclib.dir/build.make CMakeFiles/srclib.dir/src/initialize_mono.cpp.s
+	$(MAKE) -f CMakeFiles/Sle_monocularSLAM.dir/build.make CMakeFiles/Sle_monocularSLAM.dir/src/initialize_mono.cpp.s
 .PHONY : src/initialize_mono.cpp.s
 
 src/map.o: src/map.cpp.o
@@ -493,7 +493,7 @@ src/map.o: src/map.cpp.o
 
 # target to build an object file
 src/map.cpp.o:
-	$(MAKE) -f CMakeFiles/srclib.dir/build.make CMakeFiles/srclib.dir/src/map.cpp.o
+	$(MAKE) -f CMakeFiles/Sle_monocularSLAM.dir/build.make CMakeFiles/Sle_monocularSLAM.dir/src/map.cpp.o
 .PHONY : src/map.cpp.o
 
 src/map.i: src/map.cpp.i
@@ -502,7 +502,7 @@ src/map.i: src/map.cpp.i
 
 # target to preprocess a source file
 src/map.cpp.i:
-	$(MAKE) -f CMakeFiles/srclib.dir/build.make CMakeFiles/srclib.dir/src/map.cpp.i
+	$(MAKE) -f CMakeFiles/Sle_monocularSLAM.dir/build.make CMakeFiles/Sle_monocularSLAM.dir/src/map.cpp.i
 .PHONY : src/map.cpp.i
 
 src/map.s: src/map.cpp.s
@@ -511,7 +511,7 @@ src/map.s: src/map.cpp.s
 
 # target to generate assembly for a file
 src/map.cpp.s:
-	$(MAKE) -f CMakeFiles/srclib.dir/build.make CMakeFiles/srclib.dir/src/map.cpp.s
+	$(MAKE) -f CMakeFiles/Sle_monocularSLAM.dir/build.make CMakeFiles/Sle_monocularSLAM.dir/src/map.cpp.s
 .PHONY : src/map.cpp.s
 
 src/mappoint.o: src/mappoint.cpp.o
@@ -520,7 +520,7 @@ src/mappoint.o: src/mappoint.cpp.o
 
 # target to build an object file
 src/mappoint.cpp.o:
-	$(MAKE) -f CMakeFiles/srclib.dir/build.make CMakeFiles/srclib.dir/src/mappoint.cpp.o
+	$(MAKE) -f CMakeFiles/Sle_monocularSLAM.dir/build.make CMakeFiles/Sle_monocularSLAM.dir/src/mappoint.cpp.o
 .PHONY : src/mappoint.cpp.o
 
 src/mappoint.i: src/mappoint.cpp.i
@@ -529,7 +529,7 @@ src/mappoint.i: src/mappoint.cpp.i
 
 # target to preprocess a source file
 src/mappoint.cpp.i:
-	$(MAKE) -f CMakeFiles/srclib.dir/build.make CMakeFiles/srclib.dir/src/mappoint.cpp.i
+	$(MAKE) -f CMakeFiles/Sle_monocularSLAM.dir/build.make CMakeFiles/Sle_monocularSLAM.dir/src/mappoint.cpp.i
 .PHONY : src/mappoint.cpp.i
 
 src/mappoint.s: src/mappoint.cpp.s
@@ -538,7 +538,7 @@ src/mappoint.s: src/mappoint.cpp.s
 
 # target to generate assembly for a file
 src/mappoint.cpp.s:
-	$(MAKE) -f CMakeFiles/srclib.dir/build.make CMakeFiles/srclib.dir/src/mappoint.cpp.s
+	$(MAKE) -f CMakeFiles/Sle_monocularSLAM.dir/build.make CMakeFiles/Sle_monocularSLAM.dir/src/mappoint.cpp.s
 .PHONY : src/mappoint.cpp.s
 
 src/sift_line_endpoint.o: src/sift_line_endpoint.cpp.o
@@ -547,7 +547,7 @@ src/sift_line_endpoint.o: src/sift_line_endpoint.cpp.o
 
 # target to build an object file
 src/sift_line_endpoint.cpp.o:
-	$(MAKE) -f CMakeFiles/srclib.dir/build.make CMakeFiles/srclib.dir/src/sift_line_endpoint.cpp.o
+	$(MAKE) -f CMakeFiles/Sle_monocularSLAM.dir/build.make CMakeFiles/Sle_monocularSLAM.dir/src/sift_line_endpoint.cpp.o
 .PHONY : src/sift_line_endpoint.cpp.o
 
 src/sift_line_endpoint.i: src/sift_line_endpoint.cpp.i
@@ -556,7 +556,7 @@ src/sift_line_endpoint.i: src/sift_line_endpoint.cpp.i
 
 # target to preprocess a source file
 src/sift_line_endpoint.cpp.i:
-	$(MAKE) -f CMakeFiles/srclib.dir/build.make CMakeFiles/srclib.dir/src/sift_line_endpoint.cpp.i
+	$(MAKE) -f CMakeFiles/Sle_monocularSLAM.dir/build.make CMakeFiles/Sle_monocularSLAM.dir/src/sift_line_endpoint.cpp.i
 .PHONY : src/sift_line_endpoint.cpp.i
 
 src/sift_line_endpoint.s: src/sift_line_endpoint.cpp.s
@@ -565,7 +565,7 @@ src/sift_line_endpoint.s: src/sift_line_endpoint.cpp.s
 
 # target to generate assembly for a file
 src/sift_line_endpoint.cpp.s:
-	$(MAKE) -f CMakeFiles/srclib.dir/build.make CMakeFiles/srclib.dir/src/sift_line_endpoint.cpp.s
+	$(MAKE) -f CMakeFiles/Sle_monocularSLAM.dir/build.make CMakeFiles/Sle_monocularSLAM.dir/src/sift_line_endpoint.cpp.s
 .PHONY : src/sift_line_endpoint.cpp.s
 
 src/visual_odometry.o: src/visual_odometry.cpp.o
@@ -574,7 +574,7 @@ src/visual_odometry.o: src/visual_odometry.cpp.o
 
 # target to build an object file
 src/visual_odometry.cpp.o:
-	$(MAKE) -f CMakeFiles/srclib.dir/build.make CMakeFiles/srclib.dir/src/visual_odometry.cpp.o
+	$(MAKE) -f CMakeFiles/Sle_monocularSLAM.dir/build.make CMakeFiles/Sle_monocularSLAM.dir/src/visual_odometry.cpp.o
 .PHONY : src/visual_odometry.cpp.o
 
 src/visual_odometry.i: src/visual_odometry.cpp.i
@@ -583,7 +583,7 @@ src/visual_odometry.i: src/visual_odometry.cpp.i
 
 # target to preprocess a source file
 src/visual_odometry.cpp.i:
-	$(MAKE) -f CMakeFiles/srclib.dir/build.make CMakeFiles/srclib.dir/src/visual_odometry.cpp.i
+	$(MAKE) -f CMakeFiles/Sle_monocularSLAM.dir/build.make CMakeFiles/Sle_monocularSLAM.dir/src/visual_odometry.cpp.i
 .PHONY : src/visual_odometry.cpp.i
 
 src/visual_odometry.s: src/visual_odometry.cpp.s
@@ -592,8 +592,35 @@ src/visual_odometry.s: src/visual_odometry.cpp.s
 
 # target to generate assembly for a file
 src/visual_odometry.cpp.s:
-	$(MAKE) -f CMakeFiles/srclib.dir/build.make CMakeFiles/srclib.dir/src/visual_odometry.cpp.s
+	$(MAKE) -f CMakeFiles/Sle_monocularSLAM.dir/build.make CMakeFiles/Sle_monocularSLAM.dir/src/visual_odometry.cpp.s
 .PHONY : src/visual_odometry.cpp.s
+
+test/test_vedio.o: test/test_vedio.cpp.o
+
+.PHONY : test/test_vedio.o
+
+# target to build an object file
+test/test_vedio.cpp.o:
+	$(MAKE) -f CMakeFiles/test_vedio.dir/build.make CMakeFiles/test_vedio.dir/test/test_vedio.cpp.o
+.PHONY : test/test_vedio.cpp.o
+
+test/test_vedio.i: test/test_vedio.cpp.i
+
+.PHONY : test/test_vedio.i
+
+# target to preprocess a source file
+test/test_vedio.cpp.i:
+	$(MAKE) -f CMakeFiles/test_vedio.dir/build.make CMakeFiles/test_vedio.dir/test/test_vedio.cpp.i
+.PHONY : test/test_vedio.cpp.i
+
+test/test_vedio.s: test/test_vedio.cpp.s
+
+.PHONY : test/test_vedio.s
+
+# target to generate assembly for a file
+test/test_vedio.cpp.s:
+	$(MAKE) -f CMakeFiles/test_vedio.dir/build.make CMakeFiles/test_vedio.dir/test/test_vedio.cpp.s
+.PHONY : test/test_vedio.cpp.s
 
 # Help Target
 help:
@@ -601,9 +628,9 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... srclib"
+	@echo "... edit_cache"
+	@echo "... test_vedio"
 	@echo "... Sle_monocularSLAM"
 	@echo "... 3rd_party/DBoW2/DUtils/Random.o"
 	@echo "... 3rd_party/DBoW2/DUtils/Random.i"
@@ -632,15 +659,15 @@ help:
 	@echo "... 3rd_party/sophus/so3.o"
 	@echo "... 3rd_party/sophus/so3.i"
 	@echo "... 3rd_party/sophus/so3.s"
+	@echo "... src/camera.o"
+	@echo "... src/camera.i"
+	@echo "... src/camera.s"
 	@echo "... src/config.o"
 	@echo "... src/config.i"
 	@echo "... src/config.s"
 	@echo "... src/frame.o"
 	@echo "... src/frame.i"
 	@echo "... src/frame.s"
-	@echo "... src/g2o_types.o"
-	@echo "... src/g2o_types.i"
-	@echo "... src/g2o_types.s"
 	@echo "... src/initialize_mono.o"
 	@echo "... src/initialize_mono.i"
 	@echo "... src/initialize_mono.s"
@@ -656,6 +683,9 @@ help:
 	@echo "... src/visual_odometry.o"
 	@echo "... src/visual_odometry.i"
 	@echo "... src/visual_odometry.s"
+	@echo "... test/test_vedio.o"
+	@echo "... test/test_vedio.i"
+	@echo "... test/test_vedio.s"
 .PHONY : help
 
 

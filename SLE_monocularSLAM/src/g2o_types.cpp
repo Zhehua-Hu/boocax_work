@@ -1,4 +1,4 @@
-#include "../include/g2o_types.h"
+#include "g2o_types.h"
 
 namespace SLE_monocularSLAM
 {

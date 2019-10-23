@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++11
 
 CXX_DEFINES = -DCOMPILEDWITHC11
 
-CXX_INCLUDES = -I/media/oym/source/oym/boocax_work/EKF_P4P/include -I/usr/local/lib/cmake/Pangolin/../../../include -isystem /usr/include/eigen3 -isystem /opt/ros/kinetic/include/opencv-3.3.1-dev -isystem /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv -isystem /usr/local/include 
+CXX_INCLUDES = -I/media/oym/source/oym/boocax_work/EKF_P4P/include -I/usr/local/lib/cmake/Pangolin/../../../include -isystem /usr/include/eigen3 -isystem /usr/local/include -isystem /usr/local/include/opencv 
 

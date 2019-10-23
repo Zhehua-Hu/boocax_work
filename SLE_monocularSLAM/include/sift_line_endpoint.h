@@ -1,8 +1,8 @@
 #ifndef SIFT_LINE_ENDPOINT_H
 #define SIFT_LINE_ENDPOINT_H
 
-#include "../3rd_party/descriptor_custom.hpp"
-#include "../3rd_party/precomp.hpp"
+#include "descriptor_custom.hpp"
+#include "precomp.hpp"
 #include <stdarg.h>
 #include <opencv2/core/hal/hal.hpp>
 #include <math.h>
