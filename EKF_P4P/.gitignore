@@ -1,3 +1,4 @@
 build/
+qt-build/
 CMakeLists.txt.user*
 
