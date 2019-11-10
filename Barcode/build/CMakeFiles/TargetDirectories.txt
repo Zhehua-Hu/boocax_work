@@ -1,4 +1,0 @@
-/media/oym/source/oym/Barcode/Barcode/build/CMakeFiles/rebuild_cache.dir
-/media/oym/source/oym/Barcode/Barcode/build/CMakeFiles/edit_cache.dir
-/media/oym/source/oym/Barcode/Barcode/build/CMakeFiles/test_barcode.dir
-/media/oym/source/oym/Barcode/Barcode/build/CMakeFiles/Barcode.dir
