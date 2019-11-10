@@ -22,7 +22,7 @@ int main(int argc, char** argv){
               "左上-->左下-->右上-->右下"
               "的顺序依次点击图中条形码的顶点,每次点击4个顶点后,会自动跳到下一张"<<endl;
         for (string p:files){
-            manual_handlephoto("/home/oym/boocax_vo/Barcode/Barcode/img/initial_picture/"+p);
+            manual_handlephoto(path+p);
         }
         cout<<"任务结束,结果存储在可执行文件的目录 '/自动标定结果' 目录下"<<endl;
     }
@@ -30,7 +30,7 @@ int main(int argc, char** argv){
         cout<<"您选择了自动标定模式,在显示的图片上按空格键转到下一张图片"<<endl;
         para_initialize(mode);
         for (string p:files){
-         handlephoto("/home/oym/boocax_vo/Barcode/Barcode/img/initial_picture/"+p);
+         handlephoto(path+p);
             }
         cout<<"任务结束,结果存储在可执行文件的目录 '/手动标定结果' 目录下"<<endl;
 

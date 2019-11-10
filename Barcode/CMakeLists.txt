@@ -2,11 +2,10 @@ SET(PROJECT_NAME Barcode)
 
 PROJECT(${PROJECT_NAME})
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
-#set(CMAKE_VERBOSE_MAKEFILE ON)
+
 
 
 set(BUILD_TYPE Release)
-#set(BUILD_TYPE RelWithDebInfo)
 MESSAGE("BUild type:" ${BUILD_TYPE})
 
 set(EXECUTABLE_OUTPUT_PATH bin)
@@ -29,26 +28,7 @@ else()
    message(FATAL_ERROR "The compiler ${CMAKE_CXX_COMPILER} has no C++11 support. Please use a different C++ compiler.")
 endif()
 
-# required libraries
-#find_package(Eigen3 REQUIRED)
-#if(Eigen3_FOUND)
-#  message("Find_Eigen3")
-#else()
-#  message(FATAL_ERROR "Not Find Eigen3")
-#endif()
-
-
-#find_package(Boost COMPONENTS system thread) 
-# optional libraries
-#find_package(LibZip QUIET)
-#find_package(Pangolin QUIET)
 find_package(OpenCV 3.0 QUIET)
-
-#if(Pangolin_FOUND)
-#  message("Find_Pangolin")
-#else()
-#  message(FATAL_ERROR "Not Find Pangolin")
-#endif()
 
 if(OpenCV_FOUND)
   message("Find_OpenCV")
@@ -68,8 +48,6 @@ set(Barcode_SOURCE_FILES
 
 include_directories(
   ${PROJECT_SOURCE_DIR}/include
-#  ${EIGEN3_INCLUDE_DIR}
-#  ${Pangolin_INCLUDE_DIRS}
   ${OPENCV_INCLUDE_DIR}
 ) 
 
@@ -77,8 +55,6 @@ add_library(${PROJECT_NAME} ${Barcode_SOURCE_FILES} )
 
 target_link_libraries(${PROJECT_NAME}
 ${OpenCV_LIBS}
-#${EIGEN3_LIBS}
-#${Pangolin_LIBRARIES}
 )
 
 
