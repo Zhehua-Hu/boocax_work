@@ -26,7 +26,7 @@ make
 
 运行
 
-./bin/example/test_barcode "../img/initial_picture"
+./bin/example/test_barcode
 若是自己的数据集
 ./bin/example/test_barcode path    path指代数据集目录,必须包含图片以及条形码位置信息的txt文件,注意要加"",如 "/home/data"
 

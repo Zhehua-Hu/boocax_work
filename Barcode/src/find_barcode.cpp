@@ -39,7 +39,8 @@ void task_over(){
 }
 
 vector<string> getFiles(string cate_dir)
-{
+{   
+    cout<<cate_dir<<endl;
     vector<string> files,files_jpg;//存放文件名
     DIR *dir; struct
     dirent *ptr;
@@ -111,6 +112,7 @@ void find_manual(Mat img){
 void readTxt(string file , vector<barcode_position>& barcode_positions)
 {
     ifstream infile;
+
     infile.open(file.data());   //将文件流对象与文件连接起来
     assert(infile.is_open());   //若失败,则输出错误消息,并终止程序运行
     string s;

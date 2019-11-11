@@ -10,7 +10,8 @@ int main(int argc, char** argv){
         path = argv[1];
     }
     else
-        path = "/img/initial_picture";  //图片和识别结果存储路径
+        path = "../img/initial_picture";  //图片和识别结果存储路径
+    cout<<"数据集路径:"<<path<<endl;
     vector<string> files=getFiles(path);  //得到路径下所有的文件名
     cout<<"请输入模式,1代表手动标定,2代表自动标定,然后按ENTER键结束"<<endl;
     int mode;
@@ -22,7 +23,7 @@ int main(int argc, char** argv){
               "左上-->左下-->右上-->右下"
               "的顺序依次点击图中条形码的顶点,每次点击4个顶点后,会自动跳到下一张"<<endl;
         for (string p:files){
-            manual_handlephoto(path+p);
+            manual_handlephoto(path+'/'+p);
         }
         cout<<"任务结束,结果存储在可执行文件的目录 '/自动标定结果' 目录下"<<endl;
     }
@@ -30,7 +31,7 @@ int main(int argc, char** argv){
         cout<<"您选择了自动标定模式,在显示的图片上按空格键转到下一张图片"<<endl;
         para_initialize(mode);
         for (string p:files){
-         handlephoto(path+p);
+         handlephoto(path+'/'+p);
             }
         cout<<"任务结束,结果存储在可执行文件的目录 '/手动标定结果' 目录下"<<endl;
 
